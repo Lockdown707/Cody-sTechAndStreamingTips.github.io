@@ -1,0 +1,45 @@
+<DOMDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://ns.adobe.com/xfl/2008/" width="1024" height="768" currentTimeline="1" xflVersion="23.0" creatorInfo="Adobe Animate" platform="Windows" versionInfo="Saved by Animate Windows 23.0 build 103" majorVersion="23" buildNumber="103" objectsSnapTo="false" viewAngle3D="88.2079048186946" vanishingPoint3DX="512" vanishingPoint3DY="384" nextSceneIdentifier="2" playOptionsPlayLoop="false" playOptionsPlayPages="false" playOptionsPlayFrameActions="false" filetypeGUID="3CE50BB6-55CF-47A6-B591-01286DDDC64C" fileGUID="9D840F077232B44392C71E128537C020">
+     <media>
+          <DOMBitmapItem name="circuitboard2.jpg" itemID="654e9fcb-00000195" sourceExternalFilepath="./LIBRARY/circuitboard2.jpg" sourceLastImported="1699228995" externalFileSize="14519" allowSmoothing="true" quality="50" href="circuitboard2.jpg" bitmapDataHRef="M 1 1699651531.dat" frameRight="5180" frameBottom="3880" isJPEG="true"/>
+     </media>
+     <timelines>
+          <DOMTimeline name="Scene 1" layerDepthEnabled="true">
+               <layers>
+                    <DOMLayer name="Layer_1" color="#00FFFF" current="true" isSelected="true">
+                         <frames>
+                              <DOMFrame index="0" keyMode="9728">
+                                   <elements>
+                                        <DOMBitmapInstance libraryItemName="circuitboard2.jpg">
+                                             <matrix>
+                                                  <Matrix a="3.95753479003906" d="3.95875549316406"/>
+                                             </matrix>
+                                        </DOMBitmapInstance>
+                                        <DOMStaticText fontRenderingMode="standard" width="675.35" height="249.7" isSelectable="false">
+                                             <matrix>
+                                                  <Matrix tx="172.65" ty="275.25"/>
+                                             </matrix>
+                                             <transformationPoint>
+                                                  <Point x="305.1" y="121.15"/>
+                                             </transformationPoint>
+                                             <textRuns>
+                                                  <DOMTextRun>
+                                                       <characters>Cody's Tech &#xD;And &#xD;Steaming Tips</characters>
+                                                       <textAttrs>
+                                                            <DOMTextAttrs alignment="center" aliasText="false" autoKern="false" lineHeight="81.9" size="80" bitmapSize="1600" face="Modern-Regular" fillColor="#FFFFFF"/>
+                                                       </textAttrs>
+                                                  </DOMTextRun>
+                                             </textRuns>
+                                        </DOMStaticText>
+                                   </elements>
+                              </DOMFrame>
+                         </frames>
+                    </DOMLayer>
+               </layers>
+          </DOMTimeline>
+     </timelines>
+     <scripts>
+          <GlobalScripts language="Javascript"/>
+     </scripts>
+     <PrinterSettings/>
+     <publishHistory/>
+</DOMDocument>
