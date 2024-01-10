@@ -1,0 +1,245 @@
+/*
+Author: Colard J Meuter
+Date: 11/9/2023
+File Name: styles.css
+*/
+
+/* css Reset */
+body, header, nav, main, footer, h1, div, img, ul {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+body {
+	background-color: #6562fc;
+}
+
+img {
+	max-width: 100%;
+	display: block;
+}
+
+header {
+	color: #AAFF00;
+	position: sticky;
+	top: 0;
+	background-color: #6562fc;
+	height: 280px;
+}
+
+header img {
+	margin: 0 auto;
+}
+
+nav {
+	padding: 1%;
+	margin: 1%;
+}
+
+nav ul {
+	list-style-type: none;
+	text-align: right;
+}
+
+nav li {
+	font-size: 1.5em;
+	font-family: 'Lato', sans-serif;
+	border-top: 1px solid #fff;
+}
+
+nav li:first-child {
+	border-top: none;
+}
+
+nav li a {
+	display: block;
+	color: #fff;
+	padding: 0.5em 1em;
+	text-decoration: none;
+}
+
+.mobile {
+	display: block;
+}
+
+.tablet-desktop {
+	display: none;
+}
+
+main {
+	color: #fff;
+	background-color: #00008B;
+	padding: 2.5%;
+	font-size: 1.2em;
+	font-family: 'PT Sans', sans-serif;
+}
+
+.tel-link {
+	background-color: #AAFF00;
+	padding: 2%;
+	margin: 0 auto;
+	width: 80%;
+	text-align: center;
+	border-radius: 5px;
+}
+
+.tel-link a {
+	color: #00008B;
+	text-decoration: none;
+	font-size: 1.5em;
+	display: block;
+}
+
+.hours {
+	margin-left: 10%;
+}
+
+.action {
+	font-size: 1.35em;
+	color: #AAFF00;
+	font-weight: bold;
+}
+
+#Mobile, #Computer, #Streaming {
+	margin: 0 2%;
+}
+
+.round {
+	border-radius: 8px;
+}
+
+#contact .contact-email-link {
+	text-align: center;
+}
+
+#contact a {
+	color: #00008B;
+	text-align: center;
+}
+
+.map {
+	border: 8px solid #AAFF00;
+	width: 95%;
+	height: 50%;
+}
+
+/* Media Query for Tablet Viewport */
+@media screen and (min-width: 630px), print {
+
+	.tablet-desktop {
+		display: block;
+	}
+
+	.mobile {
+		display: none;
+	}
+
+	header {
+		position: static;
+		padding-bottom: 2%;
+	}
+
+	nav li {
+		border-top: none;
+		display: inline-block;
+		border-right: 1px solid #00008B;
+	}
+
+	nav li:last-child {
+		border-right: none;
+	}
+
+	nav li a {
+		padding: 0.1em 0.75em;
+	}
+
+	main ul {
+		margin: 0 0 4% 10%;
+	}
+
+	.tel-num {
+		font-size: 1.25em;
+	}
+
+	.map {
+		width: 600px;
+		height: 450px;
+	}
+}
+
+/* Media Query for Desktop Viewport */
+@media screen and (min-width: 1015px), print {
+
+	header {
+		width: 25%;
+		float: left;
+		padding-bottom: 2em;
+	}
+
+	nav {
+		float: right;
+		width: 70%;
+		margin: 2em 1em 1em 1em;
+	}
+
+	nav ul {
+		text-align: Right;
+	}
+
+	nav li a {
+		padding: 0.5em 1em;
+	}
+
+	nav li a:hover {
+		color: #000;
+		background-color: #fff;
+	}
+
+	main {
+		clear: left;
+		background-color: #00008B;
+	}
+
+	main h1 {
+		font-size: 1.8em;
+		background-color: #00008B;
+	}
+
+	#Mobile, #Computer, #Streaming {
+		width: 29%;
+		float: left;
+		background-color: #00008B;
+		margin: 0 2%;
+	}
+}
+
+/* Media Query for Large Desktop Viewports */
+@media screen and (min-width: 1921px) {
+
+	#container {
+		width: 1920px;
+		margin: 0 auto;
+	}
+}
+
+/* Media Query for Print */
+@media print {
+
+	body {
+		background-color: #fff;
+		color: #000;
+	}
+}
+
+footer p {
+	font-size: 1em;
+	text-align: center;
+	color: #fff;
+	padding: 0 1.5em;
+}
+
+footer p a {
+	color: #fff;
+	text-decoration: none;
+}
