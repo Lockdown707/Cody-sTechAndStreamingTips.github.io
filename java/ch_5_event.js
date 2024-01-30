@@ -1,31 +1,66 @@
-// ADDING ITEMS TO START AND END OF LIST
-var list = document.getElementsByTagName('ul')[0];                 // Get the <ul> element
-
-// ADD NEW ITEM TO END OF LIST
-var newItemLast = document.createElement('li');                    // Create element
-var newTextLast = document.createTextNode('Website Support');                // Create text node
-newItemLast.appendChild(newTextLast);                              // Add text node to element
-list.appendChild(newItemLast);                                     // Add element end of list
-
-// ADD NEW ITEM START OF LIST
-var newItemFirst = document.createElement('li');                   // Create element
-var newTextFirst = document.createTextNode('Internet Connection Support');                // Create text node
-newItemFirst.appendChild(newTextFirst);                            // Add text node to element
-list.insertBefore(newItemFirst, list.firstChild);                  // Add element to list
-
-
-
-var listItems = document.querySelectorAll('li');                   // All <li> elements
-
-// ADD A CLASS OF COOL TO ALL LIST ITEMS
-var i;                                                             // Counter variable
-for (i = 0; i < listItems.length; i++) {                           // Loop through elements
-  listItems[i].className = 'cool';                                 // Change class to cool
+// Function to toggle the dropdown content for a specific item
+function toggleDropdown(item) {
+  const dropdownContent = item.querySelector('.dropdown-content');
+  dropdownContent.classList.toggle('show');
 }
 
-// ADD NUMBER OF ITEMS IN THE LIST TO THE HEADING
-var heading = document.querySelector('h2');                        // h2 element
-var headingText = heading.firstChild.nodeValue;                    // h2 text
-var totalItems = listItems.length;                                 // No. of <li> elements
-var newHeading =  headingText + '<span>' + totalItems + '</span>'; // Content
-heading.innerHTML = newHeading;                                    // Update h2 using innerHTML (not textContent) because it contains markup
+// Function to handle the click on a dropdown option and navigate to index.html
+function handleOptionClick(option) {
+  // Get the URL of index.html
+  const indexPageUrl = 'services.html';
+
+  // Navigate to index.html
+  window.location.href = indexPageUrl;
+}
+
+// Get the list and its items
+const page = document.getElementById('page');
+const itemList = page.querySelector('ul');
+const items = itemList.querySelectorAll('li');
+
+// Iterate through the items and add dropdown functionality
+items.forEach(item => {
+  // Wrap the original text content with a <span> element
+  const originalText = item.textContent;
+  item.innerHTML = '';
+  const span = document.createElement('span');
+  span.textContent = originalText;
+  item.appendChild(span);
+
+  // Create a dropdown button
+  const button = document.createElement('button');
+  button.textContent = 'Dropdown'; // You can customize the button text
+
+  // Create a dropdown content container for each item
+  const dropdownContent = document.createElement('ul');
+  dropdownContent.className = 'dropdown-content';
+
+  // Create dropdown options
+  const options = ['Diagnosis $50', 'Repair Starting at $125', 'Rebuilds Starting at $200'];
+  options.forEach(optionText => {
+    const option = document.createElement('li');
+    option.textContent = optionText;
+
+    // Add a click event listener to each option
+    option.addEventListener('click', () => handleOptionClick(option));
+
+    dropdownContent.appendChild(option);
+  });
+
+  // Add the button and dropdown content to the item
+  item.appendChild(button);
+  item.appendChild(dropdownContent);
+
+  // Add a click event listener to the button to toggle the dropdown
+  button.addEventListener('click', () => toggleDropdown(item));
+});
+
+// Close all dropdowns if the user clicks outside of them
+window.addEventListener('click', (event) => {
+  items.forEach(item => {
+    const dropdownContent = item.querySelector('.dropdown-content');
+    if (event.target !== item && !dropdownContent.contains(event.target)) {
+      dropdownContent.classList.remove('show');
+    }
+  });
+});
