@@ -10,12 +10,18 @@
       <h1 id="header"></h1>
       <h2>Pick Your Repairs</h2>
       <ul>
-        <li id="one">Phone Repairs</li>
-        <li id="two">Phone Screen Repairs</li>
-        <li id="three">Computer Updates</li>
-        <li id="four">Computer Repairs</li>
+        <li id="one" class="cool">Phone Repairs</li>
+        <li id="two" class="normal">Phone Screen Repairs</li>
+        <li id="three" class="hot">Computer Updates</li>
+        <li id="four" class="normal">Computer Repairs</li>
       </ul>
+      <div id="newItemButton"><button href="#" id="showForm">Checkout</button></div>
+      <form id="newItemForm">
+        <input type="text" id="itemDescription" placeholder="Add description" />
+        <input type="submit" id="add" value="add" />
+      </form>
     </div>
+    <script src="java/jquery-ch7.js"></script>
     <script src="java/ch_5_event.js"></script>
   </body>
 </html>

@@ -4,10 +4,10 @@ function toggleDropdown(item) {
   dropdownContent.classList.toggle('show');
 }
 
-// Function to handle the click on a dropdown option and navigate to index.html
+// Function to handle the click on a dropdown option and navigate to services.html
 function handleOptionClick(option) {
-  // Get the URL of index.html
-  const indexPageUrl = 'services.html';
+  // Get the URL of services.html
+  const servicesPageUrl = 'services.html';
 
   // Navigate to index.html
   window.location.href = indexPageUrl;

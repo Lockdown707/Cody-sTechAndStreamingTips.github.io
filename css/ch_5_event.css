@@ -106,15 +106,14 @@ li:hover .dropdown-content {
 }
 
 .hot {
-  background-color: #AAFF00;
-  color: #AAFF00;
-  text-shadow: 2px 2px 1px #130676;
+  background-color: #ff9500;
+  color: #630303;
   border-top: 1px solid #110478;
-  border-bottom: 1px solid #221392;
+  border-bottom: 1px solid #AAFF00;
 }
 
 .cool {
-  background-color: #AAFF00;
+  background-color: #ff3700;
   color: #08278d;
   border-top: 1px solid #0a0a98;
 }
