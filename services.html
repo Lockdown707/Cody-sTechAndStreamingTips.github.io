@@ -39,50 +39,59 @@
 	<!-- use the main area to add the main content of the webpage -->
 	<main>
 	
-		<div id="Mobile">
-		
-			<h1>Mobile Support</h1>
-			<img src="images/mobile.jpg" alt="mobile" height="200" width="300" class="round">
-			<p>We provide mobile device support, repair and personal use training for major mobile device brands. Please contact us now for support.</p>
-			<ul class="tablet-desktop">
-				<li>Apple</li>
-				<li>Samsung</li>
-				<li>Google</li>
-				<li>Amazon</li>
-				<li>And More</li>
-			</ul>
-		</div>
-		
-		<div id="Computer">
-		
-			<h1>Computer Support</h1>
-			<img src="images/computertwo.jpg" alt="computertwo" class="round">
-			<p>We offer lots of computer support and repair. We help with hardware and software problems and provide internet connection support.</p>
-			<ul class="tablet-desktop">
-				<li>Account Login Problems</li>
-				<li>Slow Computers</li>
-				<li>Black or Blue Screens</li>
-				<li>Computers Not Turning On</li>
-				<li>Broken Screens</li>
-				<li>Any Problems you encounter</li>
-			</ul>
-		</div>
-		
-		<div id="Streaming">
-
-			<h1>Streaming Support</h1>
-			<img src="images/streaming.jpg" alt="streaming" class="round">
-			<p>We love saving money here at Cody's Tech and streaming Tips.  Cable companies charge an arm and a leg. We have discovered ways to reduce the cost of view tv channels by using streaming services to provide cable.  We specialize reducing costs and helping you pay for only what you want not all the extras cable companies force you to pay for. We are experienced with all the major streaming services so we can help you decide which are best for you!</p>
-			<ul class="tablet-desktop">
-				<li>Hulu</li>
-				<li>Netflix</li>
-				<li>Amazon Prime</li>
-				<li>Paramount+</li>
-				<li>HBO Max</li>
-				<li>Disney+</li>
-				<li>And More</li>
-			</ul>
-		</div>
+		<body>
+            <section class="page">
+        
+              <div class="tabs">
+        
+                <ul class="tab-list">
+                  <li class="active"><a class="tab-control" href="#tab-1"><h3>Mobile Support</h3></a></li>
+                  <li><a class="tab-control" href="#tab-2"><h3>Computer Support</h3></a></li>
+                  <li><a class="tab-control" href="#tab-3"><h3>Streaming Support</h3></a></li>
+                </ul>
+        
+                <div class="tab-panel active" id="tab-1">
+                  <img src="images/mobile.jpg" alt="mobile" height="200" width="300" class="round">
+                  <p>We provide mobile device support, repair and personal use training for major mobile device brands. Please contact us now for support.</p>
+                  <ul class="tablet-desktop">
+                    <li>Apple</li>
+                    <li>Samsung</li>
+                    <li>Google</li>
+                    <li>Amazon</li>
+                    <li>And More</li>
+                  </ul>
+                </div>
+        
+                <div class="tab-panel" id="tab-2">
+                  <img src="images/computertwo.jpg" alt="computertwo" class="round">
+                  <p>We offer lots of computer support and repair. We help with hardware and software problems and provide internet connection support.</p>
+                  <ul class="tablet-desktop">
+                    <li>Account Login Problems</li>
+                    <li>Slow Computers</li>
+                    <li>Black or Blue Screens</li>
+                    <li>Computers Not Turning On</li>
+                    <li>Broken Screens</li>
+                    <li>Any Problems you encounter</li>
+                  </ul>
+                </div>
+        
+                <div class="tab-panel" id="tab-3">
+                  <img src="images/streaming.jpg" alt="streaming" class="round">
+                  <p>We love saving money here at Cody's Tech and streaming Tips.  Cable companies charge an arm and a leg. We have discovered ways to reduce the cost of view tv channels by using streaming services to provide cable.  We specialize reducing costs and helping you pay for only what you want not all the extras cable companies force you to pay for. We are experienced with all the major streaming services so we can help you decide which are best for you!</p>
+                  <ul class="tablet-desktop">
+                    <li>Hulu</li>
+                    <li>Netflix</li>
+                    <li>Amazon Prime</li>
+                    <li>Paramount+</li>
+                    <li>HBO Max</li>
+                    <li>Disney+</li>
+                    <li>And More</li>
+                  </ul>
+                </div>
+        
+              </div><!-- .tabs -->
+        
+            </section><!-- .page -->
 				
 	</main>
 	
@@ -94,5 +103,8 @@
 
 	</div>
 	
+    <script src="java/ch11jquery.js"></script>
+    <script src="java/tabs.js"></script>
+
 </body>
 </html>

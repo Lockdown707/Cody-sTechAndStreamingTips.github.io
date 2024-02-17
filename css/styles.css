@@ -243,3 +243,47 @@ footer p a {
 	color: #fff;
 	text-decoration: none;
 }
+
+/********** TABS **********/
+.tab-list {
+	margin: 0;
+	padding: 0;}
+  
+  .tab-list li {
+	display: inline-block;
+	list-style-type: none;
+	background-color: #303030;
+	border-bottom: 3px solid #858585;
+	font-family: 'Jacques Francois', serif;
+	text-transform: uppercase;
+	letter-spacing: 0.2em;}
+  
+  .tab-list li a {
+	color: #AAFF00;
+	display: block;
+	padding: 3px 10px 3px 10px;}
+  
+  
+  /********** HOVER STATES **********/
+  .tab-list li.active, .tab-list li.hover {
+	background-color: #e5e5e5;
+	border-bottom: 3px solid #e5e5e5;}
+  
+  .tab-list li.active a, .tab-list li a:hover {
+	color: #1206b8;
+	background-color: #e5e5e5;}
+  
+  
+  /********** PANELS **********/
+  .tab-panel {
+	display: none;
+	background-color: #190490;
+	color: #AAFF00;
+	min-height: 150px;
+	overflow: auto;}
+  
+  .tab-panel.active {
+	display: block;}
+  
+  .tab-panel p {
+	margin: 20px;}
