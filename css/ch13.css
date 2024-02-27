@@ -144,3 +144,14 @@ textarea + span.error, #bio-count {margin: 0;}
 /* needed to override default style sheet of number polyfill */
 div.number-spin-btn-container {
   margin-bottom: 1.6em !important; }
+
+  .footer-link {
+    font-size: 3em;
+    text-align: right;
+    background-color: #00ff2f;
+    padding: 0 3em;
+  }
+
+  .footer-link a {
+    color: #1601ff;
+  }
